@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encriptador de texto - Monica Papaqui </title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="imagenes/vector.png" alt="Logo de alura" class="logo">
+	</header>
+	<main>
+		<section>
+			<textarea class="text-area" cols="30"  rows="10" placeholder ="Ingrese el texto" id="textoencriptador"></textarea>
+			<div>
+				<h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+			</div>
+
+			<div class="botones">
+				<button class="btn-encriptar" onclick="encriptar()"> Encriptar </button>
+				<button class="btn-desencriptar" onclick="desencriptar()"> Desencriptar </button>
+			</div>
+		</section>
+
+		<section>
+				<textarea cols="20" rows="10" class="mensaje" id="encriptado">Aqui no hay nada de nada</textarea>
+				<div>
+					<button class="btn-copiar" id="copiar" onclick="copiado()"> Copiar mensaje </button>
+				</div>
+		</section>
+		
+		
+		<script type="text/javascript" src="script.js"></script>
+
+	</main>
+
+	<footer>
+		Pagina creada por Monica Papaqui Porras
+	</footer>
+</body>
+</html>
